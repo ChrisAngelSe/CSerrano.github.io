@@ -1,0 +1,48 @@
+body {
+    background-color: darkcyan;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: greenyellow;
+    font-family: "Faster One", "sans-serif", "italic";
+}
+
+p {
+    font-size: 19.5px;
+    color: wheat;
+}
+
+li {
+    font-size: 19.5px;
+    color: wheat;
+}
+
+nav {
+    background-color: yellow;
+    padding: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: white;
+
+}

@@ -1,0 +1,150 @@
+body {
+    background-color: green;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    font-style: italic;
+}
+
+h2 {
+    text-align: left;
+    color: firebrick;
+    text-shadow: 2px 2px 5px black;
+}
+
+.animated_text {
+    background-image: -webkit-linear-gradient(left, #f00, #ff2b00, #f50, #ff8000, #fa0, #d4ff00, #0f0, #00ff80, #0ff, #00f, #2b00ff, 
+    #50f, #f0a, #f0a, 
+     #f00, #ff2b00, #f50, #ff8000, #fa0, #d4ff00, #0f0, #00ff80, #0ff, #00f, #2b00ff, 
+    #50f, #f0a, #f0a);
+    -webkit-text-fill-color: #0000;
+    -webkit-background-clip: text;
+    -webkit-animation: animated_background 3s linear infinite alternate;
+}
+
+@keyframes animated_background {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -600px 0;
+    }
+}
+
+nav {
+    background-color: yellow;
+    padding: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    font-style: italic;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+p {
+    color: blueviolet;
+    font-style: normal;
+    text-align: justify;
+    font-size: 20px;
+}
+
+div {
+  border: 5px outset red;
+  background-color: lightblue;    
+  text-align: center;
+  position: relative;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 96.7%;
+    display: block;
+    clear: both;
+    color: red;
+    text-align: center;
+    border: 2px solid yellow;
+    border-radius: 12px;
+    padding: 25px;
+    background-color: lime;
+}
+
+.footer_list ul {
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer_list li {
+    padding: 0 22px;
+    margin-bottom: 5px;
+    justify-content: center;
+    list-style-type: none;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.footer_list a {
+    font-size: 14px;
+    font-weight: 500;
+    color: royalblue;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    text-decoration: none;
+    display: flex;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer_list a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.footer_list a:hover {
+    color: red;
+}
+
+.footer_list a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    nav, footer, div {
+        width: 100%;
+    }
+}
